@@ -13,40 +13,44 @@
     <script src="./js/script.js" type="module" defer></script>
     <title>Frontend Mentor | Calculator App</title>
   </head>
-  <body>
+  <body class="theme-2-background">
     <section class="container">
       <!-- header section -->
       <div class="header-container">
-        <h1 class="header-logo">calc</h1>
+        <h1 class="header-logo theme-2-color">calc</h1>
         <div class="theme-toggler-container">
-          <p class="theme-header">Theme</p>
+          <p class="theme-header theme-2-color">Theme</p>
           <div class="theme-toggler">
-            <div class="toggler">
+            <div class="toggler theme-2-color">
               <div>1</div>
               <div>2</div>
               <div>3</div>
             </div>
-            <div class="toggler-track">
-              <div class="toggler-slider"></div>
+            <div class="toggler-track theme-2-toggler-track">
+              <div class="toggler-slider theme-2-slider"></div>
             </div>
           </div>
         </div>
       </div>
 
       <!-- inputs and results section -->
-      <div class="input-result">
-        <form action="">
-          <label for="input-output"></label>
-          <input type="number" name="input-output" id="input-output" />
-        </form>
-      </div>
+
+      <form action="">
+        <label for="input-output"></label>
+        <input
+          type="number"
+          name="input-output"
+          id="input-output"
+          class="input-result-container theme-2-input-result-container"
+        />
+      </form>
 
       <!-- buttons section -->
-      <div class="buttons-container">
+      <div class="buttons-container theme-2-button-container">
         <input type="button" value="7" />
         <input type="button" value="8" />
         <input type="button" value="9" />
-        <input type="button" value="del" />
+        <input type="button" value="del" class="del theme-2-del" />
         <input type="button" value="4" />
         <input type="button" value="5" />
         <input type="button" value="6" />
@@ -59,8 +63,8 @@
         <input type="button" value="0" />
         <input type="button" value="/" />
         <input type="button" value="x" />
-        <input type="button" value="reset" />
-        <input type="button" value="=" />
+        <input type="button" value="reset" class="reset theme-2-reset" />
+        <input type="button" value="=" id="theme-2-equal" class="equal" />
       </div>
     </section>
   </body>
