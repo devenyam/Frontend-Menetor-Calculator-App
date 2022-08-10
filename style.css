@@ -7,6 +7,7 @@
   --equal-hover: hsl(6, 70%, 65%);
   --theme-2-func-keys-hover: hsl(185, 41%, 49%);
   --theme-3-keys-hover: hsl(268, 52%, 41%);
+  --transition: all 0.5s ease-in-out;
   /* THEME 1 */
   /* Backgrounds */
   --theme-1-main-background: hsl(222, 26%, 31%);
@@ -89,6 +90,7 @@ body {
   align-items: center;
   font-family: var(--font);
   font-size: 2rem;
+  transition: var(--transition);
 }
 
 .container {
@@ -133,19 +135,21 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: inherit;
-  gap: 1rem;
+  /* gap: 1.2rem; */
 }
 
 .toggler > div {
+  padding: 0 8px;
   cursor: pointer;
 }
 
 .toggler-track {
   /* background-color: var(--theme-1-toggle-key-background); */
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 105%;
+  width: 100%;
   height: 1.2rem;
   padding: 0 0.1875rem;
   border-radius: 50px;
@@ -153,9 +157,11 @@ body {
 
 .toggler-slider {
   /* background-color: var(--theme-1-equalToKey-background); */
+  position: absolute;
   width: 0.8rem;
   height: 0.8rem;
   border-radius: 3.125rem;
+  transition: var(--transition);
 }
 
 .input-result-container {
@@ -179,6 +185,7 @@ body {
   padding: 2rem 1.5rem;
   gap: 1rem;
   border-radius: 0.4125rem;
+  transition: var(--transition);
 }
 
 .buttons-container > * {
@@ -337,6 +344,7 @@ body {
 .theme-2-equal {
   background-color: var(--theme-2-equalToKey-background);
   box-shadow: 0 2px var(--theme-2-equalToKey-shadow);
+  color: var(--theme-2-keys-color-light);
 }
 
 /* //////////////////////////////////////////////////// */
@@ -403,6 +411,23 @@ body {
 }
 /* /////////////////////////////////////////////////// */
 
+/* /////////////////////////////////////////////////// */
+/* ANIMATION */
+
+.theme-2 {
+  left: 40%;
+}
+
+.theme-3 {
+  left: 75%;
+}
+
+.theme-1 {
+  left: 5%;
+}
+
+/* ////////////////////////////////////////////////// */
+/* RESPONSIVENESS */
 @media (max-width: 485px) {
   .container {
     max-width: 90%;
