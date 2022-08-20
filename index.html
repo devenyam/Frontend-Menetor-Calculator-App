@@ -14,7 +14,7 @@
     <title>Frontend Mentor | Calculator App</title>
   </head>
   <body class="theme-1-background">
-    <section class="container">
+    <main class="container">
       <!-- header section -->
       <div class="header-container theme-1-color">
         <h1 class="header-logo">calc</h1>
@@ -35,37 +35,61 @@
 
       <!-- inputs and results section -->
 
-      <form action="">
+      <!-- <form action="">
         <label for="input-output"></label>
         <input
-          type="number"
+          type="text"
           name="input-output"
           id="input-output"
           class="input-result-container theme-1-input-result-container"
         />
-      </form>
+      </form> -->
+
+      <div class="input-result-container theme-1-input-result-container">
+        <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand"></div>
+      </div>
 
       <!-- buttons section -->
       <div class="buttons-container theme-1-buttons-container">
-        <input type="button" value="7" />
-        <input type="button" value="8" />
-        <input type="button" value="9" />
+        <button type="button" class="data-number">7</button>
+        <button type="button" class="data-number">8</button>
+        <button type="button" class="data-number">9</button>
+        <button type="button" class="del theme-1-del">del</button>
+        <button type="button" class="data-number">6</button>
+        <button type="button" class="data-number">5</button>
+        <button type="button" class="data-number">6</button>
+        <button type="button" class="data-operator">+</button>
+        <button type="button" class="data-number">1</button>
+        <button type="button" class="data-number">2</button>
+        <button type="button" class="data-number">3</button>
+        <button type="button" class="data-operator">-</button>
+        <button type="button" class="data-number">.</button>
+        <button type="button" class="data-number">0</button>
+        <button type="button" class="data-operator">/</button>
+        <button type="button" class="data-operator">x</button>
+        <button type="reset" class="reset theme-1-reset">reset</button>
+        <button type="button" class="equal theme-1-equal">=</button>
+
+        <!-- <input type="button" value="7" class="btn" /> -->
+        <!-- <input type="button" value="8" class="btn" />
+        <input type="button" value="9" class="btn" />
         <input type="button" value="del" class="del theme-1-del" />
-        <input type="button" value="4" />
-        <input type="button" value="5" />
-        <input type="button" value="6" />
-        <input type="button" value="+" />
-        <input type="button" value="1" />
-        <input type="button" value="2" />
-        <input type="button" value="3" />
-        <input type="button" value="-" />
-        <input type="button" value="." />
-        <input type="button" value="0" />
-        <input type="button" value="/" />
-        <input type="button" value="x" />
-        <input type="button" value="reset" class="reset theme-1-reset" />
-        <input type="button" value="=" class="equal theme-1-equal" />
+        <input type="button" value="4" class="btn" />
+        <input type="button" value="5" class="btn" />
+        <input type="button" value="6" class="btn" />
+        <input type="button" value="+" class="operation-btn" />
+        <input type="button" value="1" class="btn" />
+        <input type="button" value="2" class="btn" />
+        <input type="button" value="3" class="btn" />
+        <input type="button" value="-" class="operation-btn" />
+        <input type="button" value="." class="btn" />
+        <input type="button" value="0" class="btn" />
+        <input type="button" value="/" class="operation-btn" />
+        <input type="button" value="x" class="operation-btn" />
+        <input type="button" value="reset" class="reset theme-1-rese" />
+        <input type="button" value="=" class="equal theme-1-equal" /> -->
       </div>
-    </section>
+    </main>
   </body>
 </html>

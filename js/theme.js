@@ -6,10 +6,10 @@ const headerContainer = document.querySelector('.header-container');
 const togglerTrack = document.querySelector('.toggler-track');
 const togglerSlider = document.querySelector('.toggler-slider');
 const inputResultContainer = document.querySelector('.input-result-container');
-const buttonsContainer = document.querySelector('.buttons-container');
-const del = document.querySelector('.del');
-const reset = document.querySelector('.reset');
-const equal = document.querySelector('.equal');
+export const buttonsContainer = document.querySelector('.buttons-container');
+export const del = document.querySelector('.del');
+export const reset = document.querySelector('.reset');
+export const equal = document.querySelector('.equal');
 
 const themes = {
   theme1: 1,
