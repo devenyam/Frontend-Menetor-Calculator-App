@@ -1,6 +1,4 @@
 import './theme.js';
-import format from '../node_modules/number-format.js/lib/format.esm.js';
-
 import { del, reset, equal, buttonsContainer } from './theme.js';
 
 const previousOperand = document.querySelector('[data-previous-operand]');
